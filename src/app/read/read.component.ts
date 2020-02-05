@@ -12,6 +12,7 @@ import * as TutorialActions from '../actions/tutorial.actions';
 })
 export class ReadComponent implements OnInit {
 
+  p: number = 1;
   tutorials: Observable<Tutorial[]>;
 
   constructor(private store: Store<AppState>) {
