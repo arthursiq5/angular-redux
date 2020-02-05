@@ -7,6 +7,7 @@ import { StoreModule } from '@ngrx/store';
 import { reducer } from './reducers/tutorial.reducer';
 import { ReadComponent } from './read/read.component';
 import { CreateComponent } from './create/create.component';
+import { NgxPaginationModule } from 'ngx-pagination';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { CreateComponent } from './create/create.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    NgxPaginationModule,
     StoreModule.forRoot({
       tutorial: reducer
     })
